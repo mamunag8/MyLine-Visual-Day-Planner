@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "MyLine: Visual Day Planner",
+    "slug": "myline-visual-day-planner",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "myline",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FAF8F5"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kasbllc.myline",
+      "infoPlist": {
+        "CFBundleDisplayName": "MyLine",
+        "NSCalendarsFullAccessUsageDescription": "MyLine overlays your existing calendar events onto your visual daily timeline so you can see your free space. All data stays 100% on your device.",
+        "NSRemindersFullAccessUsageDescription": "MyLine helps you schedule your daily tasks.",
+        "UIBackgroundModes": [
+          "audio",
+          "fetch"
+        ]
+      }
+    },
+    "android": {
+      "package": "com.kasbllc.myline",
+      "versionCode": 1,
+      "allowBackup": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FAF8F5"
+      },
+      "permissions": [
+        "android.permission.READ_CALENDAR",
+        "android.permission.WRITE_CALENDAR",
+        "android.permission.SCHEDULE_EXACT_ALARM",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.VIBRATE"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-calendar",
+        {
+          "calendarPermission": "MyLine overlays your existing calendar events onto your visual daily timeline so you can see your free space. All data stays 100% on your device."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#E06D53"
+        }
+      ]
+    ]
+  }
+}

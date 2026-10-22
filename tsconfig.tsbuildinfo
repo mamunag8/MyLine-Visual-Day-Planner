@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./constants/i18n.ts","./constants/theme.ts","./utils/brownnoisegenerator.ts","./utils/timelinealgorithms.ts","./db/database.ts","./db/schema.ts","./hooks/usemylinestore.ts"],"version":"5.7.3"}
